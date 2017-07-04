@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>苏众食品</title>
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- nav -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" title="苏众食品">
+        <img src="./images/logo.jpg" alt="苏众食品" width="175" height="35">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav web-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">关于苏众</a></li>
+        <li><a href="#">产品中心</a></li>
+        <li><a href="#">新闻中心</a></li>
+        <li><a href="#">人力资源</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+      <form class="navbar-form navbar-right hidden-xs">
+        <div class="form-group clearfix">
+          <input type="text" class="form-control-1 fL" placeholder="请输入关键字">
+          <input type="submit" class="web-search fL" value="">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- banner -->
+<section class="container-fluid web-banner">
+  <img src="images/about.jpg" style="width:100%">
+</section>
+
+<!-- food -->
+<section class="container">
+  <h3 class="web-title">
+    <span>联系苏众</span>
+  </h3>
+  <div class="web-contact">
+    <div class="web-contact-map">
+      <img src="./images/map-1.jpg" width="100%" alt="">
+    </div>
+
+    <div class="row contact-info">
+      <div class="col-xs-12 col-sm-6">
+        <h3>联系方式</h3>
+        <p class="icon-address">南京市江宁区东麒路众彩物流</p>
+        <p class="icon-tel">025-52180708</p>
+        <p class="icon-email">546hgldkf@163.com</p>
+        <p class="icon-wesite">1234567.com.cn</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 line-help">
+        <h3>线路指引</h3>
+        <div class="clearfix mb-10">
+          <div class="fL icon-metro w-25">地铁</div>
+          <div class="fL w-75">
+            <p>线路：地铁一号线到天印大道转公交</p>
+            <p>导向：天印大道转841路再转831路</p>
+          </div>
+        </div>
+        <div class="clearfix mb-10">
+          <div class="fL icon-bus w-25">公交</div>
+          <div class="fL w-75">
+            <p>站台：农副产品物流中心西</p>
+            <p>线路：江宁区841路、江宁区743路、江宁区702路、江宁区791路</p>
+          </div>
+        </div>
+
+        <div class="clearfix mb-10">
+          <div class="fL icon-car w-25">自驾</div>
+          <div class="fL w-75">
+            <p>地点：南京市江宁区东麒路众彩物流</p>
+            <p>线路：永胜路与东麟路交叉口，众彩物流果品市场</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-9 web-contact-form">
+        <h3>发布留言</h3>
+        <form action="" class="clearfix">
+          <div class="input-box">
+            <input type="text" class="web-form-input" name="username" placeholder="姓名/NAME" value="">
+          </div>
+          <div class="input-box">
+            <input type="text" class="web-form-input" name="username" placeholder="邮箱/EMAIL" value="">
+          </div>
+          <div class="input-box">
+            <input type="text" class="web-form-input" name="username" placeholder="公司/COMPANY" value="">
+          </div>
+          <div class="input-box">
+            <input type="text" class="web-form-input" name="username" placeholder="电话/TEL" value="">
+          </div>
+          <div class="textarea-box">
+            <textarea name="content" class="web-form-textarea" id="" placeholder="留言："></textarea>
+          </div>
+          <div class="submit-box">
+            <input type="submit" class="web-form-btn" value="发布留言">
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-3 web-weixin">
+        <img src="./images/weixin.jpg" width="60%" alt="">
+        <p>扫一扫，添加微信</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="footer">
+  Copyright © 2017~2019.南京苏众食品有限公司 All rights reserved. 
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<script>
+$(document).ready(function(){
+    //banner图滑动
+    $("#owl-banner").owlCarousel({
+      items : 1,
+      autoPlay : true,
+      navigation : true,
+      navigationText : ["<img src='./images/icon-left.png' />", "<img src='./images/icon-right.png' />"],
+      scrollPerPage : true,
+      pagination : true,
+      paginationNumbers : false,
+    });
+
+    //新闻banner
+    $("#owl-news-banner").owlCarousel({
+      items : 1,
+      autoPlay : true,
+      navigation : true,
+      navigationText : [],
+      scrollPerPage : true,
+      pagination : true,
+      paginationNumbers : false,
+    });
+
+});
+</script>
+
+</body>
+</html>

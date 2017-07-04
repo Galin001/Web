@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>苏众食品</title>
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- nav -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" title="苏众食品">
+        <img src="./images/logo.jpg" alt="苏众食品" width="175" height="35">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav web-nav">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">关于苏众</a></li>
+        <li><a href="#">产品中心</a></li>
+        <li><a href="#">新闻中心</a></li>
+        <li><a href="#">人力资源</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+      <form class="navbar-form navbar-right hidden-xs">
+        <div class="form-group clearfix">
+          <input type="text" class="form-control fL" placeholder="请输入关键字">
+          <input type="submit" class="web-search fL" value="">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- banner -->
+<section class="container-fluid web-banner">
+  <img src="images/about.jpg" style="width:100%">
+</section>
+
+<section class="container">
+  <h3 class="web-title">
+    <span>关于我们</span>
+  </h3>
+  <div class="web-public-about">
+    【走进苏众】
+南京苏众食品有限公司，总注册资金600万。地处南京农副产品批发市场，地理位置优越市场资源丰富。公司主要从事冷冻批发，冷鲜白条肉批发，冷鲜牛羊肉、家禽批发，团购企业配送，门市零售，餐饮加工，电子商务协同配送等。
+企业长期从事农副产品以来，一直以“关注食品安全，关注民生”为企业宗旨，从源头到终端一站式全程冷链服务模式。现有冷藏车数十辆，冷库面积1000多平方。严把质量关，严格控制食品安全隐患。
+2012年起公司先后筹建了：南京众彩批发营销中心，南京众彩零售配送中心，南京晓庄市场营销中心，南京清凉门市场营销中心，溧水苏众分公司等，南京禄口苏众分公司，南京六合苏众分公司、无锡分公司、泰州分公司。
+【企业文化】 
+企业核心理念：谦虚   好学   与时俱进 
+          专业   奋进   争创品牌 
+企业核心价值：关注食品安全   关注民生
+企业核心竞争力：大采购  大物流  走终端  
+企业终极目标：把“苏众”打造成农副产品流通配送行业的一流
+              品牌。
+企业责任：把小公司做成大公司，把大公司做成大家的公司。
+企业经营理念：诚信  品牌  价值  回报
+【合作企业】
+我们合作的高校及企业有：解放军理工大学双龙街校区、岔路口校区、炮兵学院、南京大学、南财、南邮、南工院、南京森林警察学院、LG工厂、夏普、AO斯密斯、南汽、高齿、交通设计院、宏图三胞、东方航空公司江苏分公司、金陵海关、江苏省中医院、秦淮区教师进修学院、方山体育训练基地等。
+  </div>
+</section>
+
+<!-- contact -->
+<section class="container">
+  <h3 class="web-title">
+    <span>联系苏众</span>
+  </h3>
+  <div class="row web-contact">
+    <div class="col-xs-12 col-sm-3 web-contact-info">
+      <h4>南京苏众食品有限公司</h4>
+      <p>电话：025-52180708</p>
+      <p>邮箱：546hgldkf@163.com</p>
+      <p>传真：025-521820708</p>
+      <p>网址：1234567.com.cn</p>
+      <p>公司地址：南京市江宁区东麒路众彩物流</p>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+      <img src="./images/map.jpg" width="100%" alt="">
+    </div>
+  </div>
+</section>
+
+<div class="footer">
+  Copyright © 2017~2019.南京苏众食品有限公司 All rights reserved. 
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<script>
+$(document).ready(function(){
+    //banner图滑动
+    $("#owl-banner").owlCarousel({
+      items : 1,
+      autoPlay : true,
+      navigation : true,
+      navigationText : ["<img src='./images/icon-left.png' />", "<img src='./images/icon-right.png' />"],
+      scrollPerPage : true,
+      pagination : true,
+      paginationNumbers : false,
+    });
+
+    //新闻banner
+    $("#owl-news-banner").owlCarousel({
+      items : 1,
+      autoPlay : true,
+      navigation : true,
+      navigationText : [],
+      scrollPerPage : true,
+      pagination : true,
+      paginationNumbers : false,
+    });
+
+});
+</script>
+
+</body>
+</html>
